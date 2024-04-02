@@ -100,5 +100,5 @@ jobs:
     - name: Build aria2
       run: |
         make -j"$(nproc 2> /dev/null || sysctl -n hw.ncpu)"
-#        make -j"$(nproc 2> /dev/null || sysctl -n hw.ncpu)" check
+        make -j"$(nproc 2> /dev/null || sysctl -n hw.ncpu)" check
 
