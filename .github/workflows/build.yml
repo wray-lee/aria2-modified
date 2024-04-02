@@ -101,4 +101,6 @@ jobs:
       run: |
         make -j"$(nproc 2> /dev/null || sysctl -n hw.ncpu)"
         make -j"$(nproc 2> /dev/null || sysctl -n hw.ncpu)" check
+    - name: Download
+      uses: actions/download-artifact@v4.1.4        
 
